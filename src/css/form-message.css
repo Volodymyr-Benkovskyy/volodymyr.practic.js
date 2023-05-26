@@ -1,0 +1,12 @@
+body {
+  padding: 16px;
+}
+
+p {
+  margin-bottom: 0;
+}
+
+.btn {
+  background-color: blue;
+  color: brown;
+}
