@@ -2,7 +2,7 @@
  * Method(PUT/PATCH). Headers ("Content-Type": "application/json"). Body.
  */
 
-const BASE_URL = 'http://localhost:3000';
+/* const BASE_URL = 'http://localhost:3000';
 
 const updateUserInfo = (userId, userInfo) => {
   fetch(`${BASE_URL}/users/${userId}`)
@@ -47,3 +47,33 @@ updateUserInfo(11, {
   phone: '(478) 688-5572',
   email: 'doap@siefvup.sj',
 });
+ */
+
+const POST_URL = 'http://localhost:3000';
+
+const updateUserInfo = (userId, userInfo) => {
+  return fetch(`${POST_URL}/users/${userId}`, {
+    method: 'PUT',
+    body: JSON.stringify(userInfo),
+    headers: {
+      'Content-Type': 'application/json',
+    },
+  }).then(response => {
+    if (!response.ok) {
+      throw new Error(response.status);
+    }
+    return response.json();
+  });
+};
+
+updateUserInfo(10, {
+  name: 'volodymyr Benkovskyy',
+  phone: '(478) 688-5572',
+  email: 'doap@siefvup.sj',
+})
+  .then(data => {
+    console.log(data);
+  })
+  .catch(err => {
+    console.log(err);
+  });

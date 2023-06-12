@@ -13,7 +13,7 @@
 //     console.log(err);
 //   });
 
-const BASE_URL = 'http://localhost:3000';
+/* const BASE_URL = 'http://localhost:3000';
 
 fetch(`${BASE_URL}/users`, {
   method: 'GET',
@@ -30,4 +30,4 @@ fetch(`${BASE_URL}/users`, {
   })
   .catch(err => {
     console.log(err);
-  });
+  }); */
