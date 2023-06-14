@@ -1,5 +1,5 @@
 // https://unsplash.com/
-import { UnsplashApi } from './unsplash-api';
+/* import { UnsplashApi } from './unsplash-api';
 import createGalleryCards from '../templates/gallery-card.hbs';
 
 const searchFormEl = document.querySelector('.js-search-form');
@@ -80,4 +80,4 @@ const onLoadMoreBtnClick = event => {
 };
 
 searchFormEl.addEventListener('submit', onSearchFormSubmit);
-loadMoreBtnEl.addEventListener('click', onLoadMoreBtnClick);
+loadMoreBtnEl.addEventListener('click', onLoadMoreBtnClick); */

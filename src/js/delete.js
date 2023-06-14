@@ -2,7 +2,7 @@
  * Method(DELETE)
  */
 
-const BASE_URL = 'http://localhost:3000';
+/* const BASE_URL = 'http://localhost:3000';
 
 const deleteUserById = userId => {
   return fetch(`${BASE_URL}/users/${userId}`, {
@@ -23,3 +23,4 @@ deleteUserById(12)
   .catch(err => {
     console.log(err);
   });
+ */

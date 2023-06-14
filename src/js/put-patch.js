@@ -49,7 +49,7 @@ updateUserInfo(11, {
 });
  */
 
-const POST_URL = 'http://localhost:3000';
+/* const POST_URL = 'http://localhost:3000';
 
 const updateUserInfo = (userId, userInfo) => {
   return fetch(`${POST_URL}/users/${userId}`, {
@@ -76,4 +76,4 @@ updateUserInfo(10, {
   })
   .catch(err => {
     console.log(err);
-  });
+  }); */

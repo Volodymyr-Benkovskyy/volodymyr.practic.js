@@ -12,6 +12,16 @@
 //   .catch(err => {
 //     console.log(err);
 //   });
+const BASE_URL = 'http://localhost:3000';
+import axios from 'axios';
+axios
+  .get(`${BASE_URL}/users`)
+  .then(response => {
+    console.log(response.data);
+  })
+  .catch(err => {
+    console.log(err);
+  });
 
 /* const BASE_URL = 'http://localhost:3000';
 
